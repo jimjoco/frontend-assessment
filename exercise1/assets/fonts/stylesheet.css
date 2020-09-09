@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Acronym';
+    src: url('Acronym-Bold.eot');
+    src: url('Acronym-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Acronym-Bold.woff2') format('woff2'),
+        url('Acronym-Bold.woff') format('woff'),
+        url('Acronym-Bold.ttf') format('truetype'),
+        url('Acronym-Bold.svg#Acronym-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

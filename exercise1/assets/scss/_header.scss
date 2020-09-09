@@ -1,0 +1,25 @@
+.site--header {
+  background-image: url(../images/1920x650.png);
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+
+  h1 {
+    font-family: "Acronym",sans-serif;
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 85px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+  }
+
+  p {
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    margin: 0;
+    line-height: 1.2;
+  }
+}
