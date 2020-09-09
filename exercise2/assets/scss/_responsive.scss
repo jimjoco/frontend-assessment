@@ -1,0 +1,36 @@
+// Landscape phones, mobile devices
+@media only screen and (min-width: 992px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
+// Landscape phones, mobile devices
+@media only screen and (min-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+// Landscape phones, mobile devices
+@media only screen and (max-width: 767.98px) {
+  .hidden-sm {
+    display: none;
+  }
+
+  body {
+    background-color: #ccc;
+  }
+
+  .site--content {
+    margin-top: 45px;
+
+    .section-container {
+      background-color: transparent;
+    }
+
+    .tabs-accordion {
+      align-items: flex-start;
+    }
+  }
+}

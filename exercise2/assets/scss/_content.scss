@@ -1,0 +1,131 @@
+.site--content {
+  margin-top: 50px;
+
+  .section-container {
+    max-width: 500px;
+    background-color: #999;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 300px;
+  }
+
+  .tabs-accordion {
+    height: calc(100vh - 100px);
+    align-items: center;
+  }
+
+  .nav {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    list-style-type: none;
+    font-size: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000;
+
+    li {
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      transition: all .7s ease-in-out;
+      flex: 1;
+
+      &.active {
+        border-bottom: 3px solid #000;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        padding: 6px 12px;
+        color: #000;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 0 15px;
+
+    .tab-pane {
+      max-height: 0;
+      opacity: 0;
+      overflow-y: hidden;
+      transition: all .7s ease-in-out;
+
+      &.active {
+        max-height: 1000px;
+        opacity: 1;
+        transition: all .7s ease-in-out;
+      }
+    }
+  }
+
+  .accordion {
+    padding: 0 25px;
+
+    .section {
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      background-color: #fff;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .section {
+
+    h2.title {
+      font-size: 16px;
+      margin: 0;
+      position: relative;
+      transition: all .3s ease-in-out;
+      padding: 10px 12px;
+
+      &:after {
+        position: absolute;
+        content: "";
+        right: 16px;
+        width: 2px;
+        height: 2px;
+        border: solid #000;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        transition: all .3s ease-in-out;
+        top: 15px;
+      }
+    }
+
+    .content {
+      margin-top: 0;
+      opacity: 0;
+      max-height: 0;
+      overflow-y: hidden;
+      transition: all .3s ease-in-out;
+      padding: 0 12px 10px;
+
+      p {
+        margin-top: 0;
+      }
+    }
+
+    &.show {
+
+      h2.title {
+
+        &:after {
+          transform: rotate(225deg);
+          top: 19px;
+        }
+      }
+
+      .content {
+        opacity: 1;
+        max-height: 1000px;
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+}

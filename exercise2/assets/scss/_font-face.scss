@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Acronym';
+  src: url('../fonts/Acronym-Bold.eot');
+  src: url('../fonts/Acronym-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Acronym-Bold.woff2') format('woff2'),
+      url('../fonts/Acronym-Bold.woff') format('woff'),
+      url('../fonts/Acronym-Bold.ttf') format('truetype'),
+      url('../fonts/Acronym-Bold.svg#Acronym-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff'),
+      url('../fonts/Roboto-Regular.ttf') format('truetype'),
+      url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
