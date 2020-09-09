@@ -1,4 +1,4 @@
-Bonus points - Answers
+Bonus points - Answer
 ---
 Question: Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.<br/><br/>
 Answer: In this expression, string are being added, however, after ('b' + 'a' +), there is +'a' (positive a string), which is supposed to be a positive number but it is not, and it was declared as string 'a'. Since it is not a number but string, the result will NaN(not a number). The simpler expression would be this ('b' + 'a' + 'NaN' + 'a').toLowerCase(). And the end result will be (banana) as the result string turned to lowercase using the toLowerCase() function.
